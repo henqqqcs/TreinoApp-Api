@@ -25,7 +25,7 @@ public class UsuarioCadastroController {
 	public ResponseEntity<String> adicionar(@RequestBody Usuario usuario) {
 
 		usuarioService.adicionar(usuario);
-		return new ResponseEntity<String>("Usuario cadastrado com sucesso!", HttpStatus.FORBIDDEN);
+		return new ResponseEntity<String>("Usuario cadastrado com sucesso!", HttpStatus.OK);
 	}
 
 	@RequestMapping(method = RequestMethod.PUT)
